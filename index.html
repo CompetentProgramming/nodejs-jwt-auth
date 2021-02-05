@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competent programming</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="h-100">
+    <div class="container h-100">
+        <div class="row d-flex h-100 align-items-center justify-content-center">
+            <div class="form-container p-3 w-100">
+                <form onsubmit="signUpSubmit(event)" name="signUp" id="sign-up-form" class="form-reg d-none">
+                    <h1 class="text-center">Sign up</h1>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" value="First" required class="form-control" id="firstName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" value="Last" required class="form-control" id="lastName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="competent.programming@gmail.com" required class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" value="pwd" required class="form-control" id="password">
+                    </div>
+                    <div class="d-flex align-content justify-content-between">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="#" class="show-login">Login</a>
+                    </div>
+                </form>
+                <form onsubmit="signInSubmit(event)" name="signIn" id="sign-in-form" class="form-login">
+                    <h1 class="text-center">Sign up</h1>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="competent.programming@gmail.com" required class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" value="pwd" required class="form-control" id="password">
+                    </div>
+                    <div class="d-flex align-content justify-content-between">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="#" class="show-reg">Registration</a>
+                    </div>
+                </form>
+                <div class="logged text-center d-none">
+                    <h1>Finally you are here</h1>
+                    <a href="#" class="logout">Logout</a>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

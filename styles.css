@@ -1,0 +1,12 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: #2b152b;
+}
+
+.form-container {
+    background: white;
+    max-width: 400px;
+}
